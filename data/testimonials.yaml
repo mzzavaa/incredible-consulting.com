@@ -1,0 +1,13 @@
+# Client quotes. EMPTY ON PURPOSE.
+#
+# A quote ships only when all three are true:
+#   1. a real client actually said it
+#   2. they have given written approval to publish it
+#   3. the attribution is accurate, even if anonymised by role and sector
+#
+# The homepage testimonial section does not render while this file is empty.
+# Do not add an illustrative or representative quote. There is no such thing:
+# an invented testimonial is a fabricated endorsement.
+#
+# - text: "..."
+#   cite: "Role, Sector"

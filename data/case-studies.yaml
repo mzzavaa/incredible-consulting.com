@@ -1,0 +1,47 @@
+# Delivered engagements. Outcome first, technology second.
+# Mirrors the front matter of content/case-studies/*.md for listing views.
+
+- slug: geo-ai-platform
+  title: "Conversational GIS for Grid Analysis"
+  subtitle: "Multi-agent spatial analysis in natural German"
+  client: "Spatial analytics platform, energy and infrastructure"
+  industry: energy-and-utilities
+  engagement_type: "Workshop series and PoC development"
+  status: active
+  description: "Spatial analysis bottlenecked on a handful of GIS specialists, opened up to domain experts through a natural language interface over PostGIS."
+  technologies: [AWS Bedrock, CrewAI, PostGIS, MCP, Lambda, Python]
+  outcomes:
+    - Domain experts run spatial queries without SQL or a GIS client
+    - Custom MCP server exposes PostGIS operations safely to agents
+    - Query results traced back to source geometry to prevent invented answers
+  related_services: [ai-and-agents, data-platforms]
+
+- slug: automation-hub
+  title: "Multi-Agent Automation Hub"
+  subtitle: "One conversational entry point over five agent crews"
+  client: "Internal product, offered as a reference build"
+  industry: manufacturing-and-logistics
+  engagement_type: "Proof of concept into production"
+  status: active
+  description: "Five half-automated back-office workflows consolidated into one agent runtime with infrastructure as code and a deployment pipeline."
+  technologies: [AWS Bedrock, AgentCore, CrewAI, Terraform, CodeBuild, Claude]
+  outcomes:
+    - Recurring operational work handled without manual handoffs
+    - Cost per task controlled through model routing
+    - Full Terraform and CI/CD deployment, reproducible from scratch
+  related_services: [automation, ai-and-agents]
+
+- slug: video-intelligence-pipeline
+  title: "Serverless Video Intelligence Pipeline"
+  subtitle: "Agent film crew with six layers of validation"
+  client: "Media and events workload"
+  industry: media
+  engagement_type: "Fixed-scope build"
+  status: completed
+  description: "Raw footage turned into publishable cuts by a serverless pipeline, with frame level validation to stop the agents inventing content."
+  technologies: [Lambda, Step Functions, MediaConvert, FFmpeg, AWS Bedrock, Rekognition]
+  outcomes:
+    - Publishable cuts produced without a manual editing pass
+    - Six layer validation system caught hallucinated scene selections
+    - Scale-to-zero cost profile between events
+  related_services: [ai-and-agents, cloud-architecture]

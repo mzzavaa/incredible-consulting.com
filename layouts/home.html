@@ -1,0 +1,83 @@
+{{ define "main" }}
+{{- $h := .Params.hero -}}
+
+{{/* 1. Hero. Two-line gold headline over the CSS atmosphere. */}}
+{{ partial "hero.html" (dict
+     "ctx" . "eyebrow" $h.eyebrow "line1" $h.line_1 "line2" $h.line_2
+     "italic" $h.line_2_italic "lede" $h.lede "image" $h.image) }}
+
+{{/* 2. Guild row. The four service pillars, extended to the full set. */}}
+{{ partial "guild-row.html" (dict "items" hugo.Data.guilds "variant" "row") }}
+
+{{/* 3. Philosophy plus the comparison table. */}}
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <h2>{{ .Params.philosophy.line_1 }}
+        <span class="display__line-2 display__line-2--italic">{{ .Params.philosophy.line_2 }}</span>
+      </h2>
+      {{ partial "comparison-table.html" (dict "data" hugo.Data.comparison "ctx" .) }}
+    </div>
+  </div>
+</section>
+
+{{/* 4. Proof band. Each metric traceable to a named engagement. */}}
+<section class="section--sm">
+  <div class="container">
+    {{ partial "stat-band.html" (dict "items" hugo.Data.results "show_source" true) }}
+  </div>
+</section>
+
+{{/* 5. Selected case studies. Outcome before technology. */}}
+<section class="section">
+  <div class="container">
+    {{ partial "section-header.html" (dict
+         "eyebrow" "Selected case studies" "line1" "The result,"
+         "line2" "before the technology." "italic" true
+         "link_url" "/case-studies/" "link_text" "View all cases") }}
+    <div class="card-grid card-grid--wide">
+      {{ range first 2 (where .Site.RegularPages "Section" "case-studies") }}
+        {{ partial "case-study-card.html" (dict "page" .) }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{/* 6. The delivery method in four steps. */}}
+<section class="section section--raised section--ruled">
+  <div class="container">
+    {{ partial "section-header.html" (dict
+         "eyebrow" "How it works" "line1" "From challenge"
+         "line2" "to impact." "link_url" "/method/" "link_text" "Our method") }}
+    {{ partial "process-steps.html" (dict "items" hugo.Data.process) }}
+  </div>
+</section>
+
+{{/* 7. Testimonial. Renders only when a real, attributable quote exists in
+      data/testimonials.yaml. Never hardcode one here. */}}
+{{ with hugo.Data.testimonials }}
+{{ $t := index . 0 }}
+<section class="section">
+  <div class="container container--narrow">
+    {{ partial "testimonial.html" (dict "text" $t.text "cite" $t.cite) }}
+  </div>
+</section>
+{{ end }}
+
+{{/* 8. Logo wall. Renders only when client marks have written permission and
+      have been added to `logos` in content/_index.md. */}}
+{{ with .Params.logos }}
+<section class="section--sm">
+  <div class="container">
+    <span class="eyebrow eyebrow--center">Trusted by innovative organisations</span>
+    {{ partial "logo-wall.html" (dict "items" .) }}
+  </div>
+</section>
+{{ end }}
+
+{{/* 9. Closing invitation. */}}
+{{ partial "cta-band.html" (dict "ctx" .
+     "line1" "The right expertise."
+     "line2" "Assembled for your challenge."
+     "aside" "Tell us what you are trying to achieve. We will tell you who should work on it, or that we are not the right people.") }}
+{{ end }}

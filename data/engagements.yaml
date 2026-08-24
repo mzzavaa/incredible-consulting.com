@@ -1,0 +1,49 @@
+# Engagement models offered by Incredible Consulting.
+# Drives the comparison table on /engagements/ and the pricing bands on /pricing/.
+
+- slug: workshop-series
+  title: "Workshop Series"
+  subtitle: "From ambition to a ranked, costed backlog"
+  category: advisory
+  status: available
+  duration: "2 to 5 sessions over 3 to 6 weeks"
+  commercial_model: "Fixed fee per series"
+  best_for: "Teams with an ambition and no agreed scope"
+  description: "Facilitated sessions with the people who own the problem, ending in a prioritised use case list with effort and value estimates."
+  deliverables:
+    - Ranked use case backlog with value and effort estimates
+    - Target architecture sketch
+    - Risk and constraint register
+    - Written recommendation, including the option to stop
+  related_services: [ai-and-agents, automation, data-platforms]
+
+- slug: proof-of-concept
+  title: "Proof of Concept"
+  subtitle: "Time-boxed evidence, not a demo video"
+  category: build
+  status: available
+  duration: "4 to 10 weeks"
+  commercial_model: "Fixed scope, fixed fee"
+  best_for: "Teams that need evidence before a budget cycle"
+  description: "A working build against one agreed success metric, with an evaluation harness and a production cost estimate attached."
+  deliverables:
+    - Running system in your environment
+    - Source code in your repository
+    - Evaluation results against the agreed metric
+    - Production cost estimate and path to go-live
+  related_services: [ai-and-agents, automation]
+
+- slug: architecture-audit
+  title: "Architecture Audit"
+  subtitle: "An independent read you can show a board"
+  category: advisory
+  status: available
+  duration: "2 to 4 weeks"
+  commercial_model: "Fixed fee"
+  best_for: "Teams inheriting a system or preparing for scale"
+  description: "Review of an existing cloud, AI, or data system covering risk, cost, and operational readiness, with a ranked remediation plan."
+  deliverables:
+    - Written report with findings ranked by risk and cost
+    - Remediation plan with effort estimates
+    - Readout session for engineering and for leadership
+  related_services: [cloud-architecture, data-platforms, ai-governance]

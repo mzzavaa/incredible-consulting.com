@@ -1,0 +1,18 @@
+# Traditional Consulting versus INCREDIBLE.
+# them: what the buyer has experienced. us: what replaces it.
+# Keep the pairs parallel in grammar. Six to eight rows reads best.
+
+heading_them: "Traditional consulting"
+rows:
+  - them: "Thousands of consultants"
+    us: "Curated experts"
+  - them: "Billable hours"
+    us: "Outcomes"
+  - them: "Hierarchies"
+    us: "Small autonomous teams"
+  - them: "Sales first"
+    us: "Engineering first"
+  - them: "Junior heavy"
+    us: "Senior only"
+  - them: "Internal politics"
+    us: "Direct collaboration"

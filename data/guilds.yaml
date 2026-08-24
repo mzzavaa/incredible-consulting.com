@@ -1,0 +1,32 @@
+# Display vocabulary for consulting.com and company.com only.
+# Content directories and URL paths are unchanged: these map onto /services/.
+# Icon key resolves to layouts/partials/icons/<key>.svg.
+
+- key: ai
+  label: "AI Guild"
+  desc: "Intelligent systems that create real value"
+  url: "/services/ai/"
+- key: cloud
+  label: "Cloud Guild"
+  desc: "Architectures that scale, securely"
+  url: "/services/cloud/"
+- key: security
+  label: "Security Guild"
+  desc: "Trust built into every layer"
+  url: "/services/security/"
+- key: data
+  label: "Data Guild"
+  desc: "Data turned into clarity and advantage"
+  url: "/services/data/"
+- key: platform
+  label: "Platform Guild"
+  desc: "The platforms that power teams"
+  url: "/services/platform/"
+- key: opensource
+  label: "Open Source Guild"
+  desc: "The foundations we all build on"
+  url: "/services/open-source/"
+- key: transformation
+  label: "Transformation Guild"
+  desc: "Organisations that become engineering driven"
+  url: "/services/transformation/"

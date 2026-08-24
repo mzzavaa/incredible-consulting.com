@@ -1,0 +1,41 @@
+# Headline metrics used in the proof band on the homepage and on /case-studies/.
+# Every entry must be traceable to a named engagement that exists in
+# content/case-studies/. A metric without a real source does not ship.
+#
+# 'value' and 'source' are what layouts/partials/stat-band.html renders.
+# 'case_study' is the slug it links to. The remaining keys are the original
+# schema and are used by the case-study pages.
+#
+# OPEN: two of these three are not numeric, because no verified figure exists
+# yet. The stat band is designed for a short numeral. Replace 'value' with a
+# real number once one can be substantiated, or drop the entry. Do not invent
+# one. The design handoff arrived with headline percentages and counts taken
+# from the mockup and attributed to engagements that do not exist. They were
+# removed rather than reused.
+
+- slug: geo-query-time
+  value: "Days to minutes"
+  metric: "Days to minutes"
+  label: "Spatial query turnaround"
+  source: "Conversational GIS for Grid Analysis"
+  description: "Analysis requests that queued behind GIS specialists for days now answered in minutes by the requester."
+  case_study: geo-ai-platform
+  category: delivery-speed
+
+- slug: validation-layers
+  value: "Six"
+  metric: "Six validation layers"
+  label: "Validation layers before publication"
+  source: "Serverless Video Intelligence Pipeline"
+  description: "Layered checks including frame analysis, so no output reaches publication without evidence behind it."
+  case_study: video-intelligence-pipeline
+  category: quality
+
+- slug: agent-cost-routing
+  value: "Per task"
+  metric: "Cost per task tracked from day one"
+  label: "AI cost measured, not estimated"
+  source: "Multi-Agent Automation Hub"
+  description: "Model routing across a strong reasoning model and a cheaper utility model, measured per task rather than estimated per month."
+  case_study: automation-hub
+  category: cost

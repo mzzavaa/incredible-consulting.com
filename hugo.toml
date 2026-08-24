@@ -1,0 +1,58 @@
+baseURL = 'https://incredible-consulting.com/'
+locale = 'en-us'
+theme = "incredible"
+title = 'Incredible Consulting'
+# House style: emojis are banned across content, layouts, and config.
+enableEmoji = false
+disableHugoGeneratorInject = true
+disableKinds = ['taxonomy', 'term']
+
+# Brand palette (for the later theming pass):
+#   green #3D8F37 · dark #0a1a08 · white #fff · background #f8f9f6
+#   Font: Inter
+
+[params]
+  description  = "AI, cloud, automation, and data consulting for teams that need working systems, not decks."
+  tagline      = "Consulting · Vienna · AI and Cloud"
+  email        = "hello@incredible-consulting.com"
+  linkedin     = "https://www.linkedin.com/in/lindamohamed"
+  github       = "https://github.com/linda-mhmd"
+  booking      = "https://outlook.office.com/book/hello@lindamohamed.com/?ismsaljsauthenabled"
+  parent       = "https://incredible-company.com/"
+
+  # Sibling domains in the Incredible portfolio
+  consulting_org = "https://incredible-consulting.org/"
+  builders       = "https://incredible.builders/"
+  community      = "https://incredible.community/"
+  training       = "https://incredible.training/"
+  founder        = "https://lindamohamed.work/"
+
+[[menus.main]]
+  name = "Philosophy"
+  url = "/method/"
+  weight = 10
+[[menus.main]]
+  name = "Guilds"
+  url = "/services/"
+  weight = 20
+[[menus.main]]
+  name = "Masters"
+  url = "/team/"
+  weight = 30
+[[menus.main]]
+  name = "Case Studies"
+  url = "/case-studies/"
+  weight = 40
+[[menus.main]]
+  name = "Engagements"
+  url = "/engagements/"
+  weight = 50
+
+[[menus.footer]]
+  name = "Imprint"
+  url = "/legal/imprint/"
+  weight = 10
+[[menus.footer]]
+  name = "Privacy"
+  url = "/legal/privacy/"
+  weight = 20
