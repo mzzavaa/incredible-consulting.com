@@ -1,21 +1,10 @@
 ---
-title: "Imprint"
-description: "Company information required under Austrian and EU disclosure rules, including registration and contact details."
-weight: 111
+title: "Impressum"
+description: "Offenlegung gemäß § 5 Abs. 1 ECG, § 25 MedienG, § 63 GewO und § 14 UGB."
+weight: 10
 draft: false
 jurisdiction: "Austria"
-legal_basis: ["ECG", "UGB", "Mediengesetz"]
+language_note: "Legal disclosure, published in German as required in Austria."
 ---
 
-**Purpose.** Mandatory disclosure for a commercial site operated from Austria.
-
-**Contains.**
-- Legal name, legal form, and business purpose
-- Registered address and registration number
-- VAT identification number
-- Chamber membership and applicable trade regulations
-- Contact details and responsible person for content
-- Online dispute resolution notice
-
-**Primary CTA.** Contact the responsible entity.
-**Links to.** /legal/privacy/, /contact/, and https://incredible-company.com/legal/imprint/ as the group entity.
+{{< imprint >}}
