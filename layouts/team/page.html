@@ -1,0 +1,170 @@
+{{/*
+  team/page.html  ·  the Master profile.
+
+  Overrides the theme's prose archetype for /team/ only. A person page needs a
+  face, a short factual column, and a stat band before the prose, which the
+  generic archetype deliberately does not carry.
+
+  Front matter it reads, all optional:
+    portrait, portrait_alt   4:5 image in assets/
+    role, location, languages, availability
+    credentials[], focus[], guilds[]
+    stats[]  { value, label }  rendered through stat-band.html
+
+  A page with no portrait (the associate network, for example) falls back to a
+  single prose column rather than rendering an empty image slot.
+*/}}
+{{ define "main" }}
+
+{{ partial "hero.html" (dict
+     "eyebrow" (.Params.eyebrow | default .CurrentSection.Title)
+     "line1"   .Title
+     "line2"   .Params.headline_2
+     "italic"  true
+     "lede"    (.Params.lede | default .Description)
+     "plain"   true
+     "ctx"     .) }}
+
+<section class="section">
+  <div class="container">
+
+    {{ partial "breadcrumb.html" . }}
+
+    {{ with .Params.portrait }}
+    <div class="split">
+      <div>
+        {{ partial "image-slot.html" (dict
+             "src"     .
+             "ratio"   "portrait"
+             "alt"     (or $.Params.portrait_alt $.Title)
+             "loading" "eager") }}
+      </div>
+      <div>
+        {{ with $.Params.role }}<span class="eyebrow">{{ . }}</span>{{ end }}
+
+        {{ with $.Params.focus }}
+        <h4>Delivers</h4>
+        <p class="meta">{{ delimit . ", " ", and " }}</p>
+        {{ end }}
+
+        {{ with $.Params.location }}
+        <h4>Based</h4>
+        <p class="meta">{{ . }}</p>
+        {{ end }}
+
+        {{ with $.Params.languages }}
+        <h4>Languages</h4>
+        <p class="meta">{{ delimit . ", " " and " }}</p>
+        {{ end }}
+
+        {{ with $.Params.availability }}
+        <h4>Availability</h4>
+        <p class="meta">{{ . }}</p>
+        {{ end }}
+
+        {{ with $.Params.credentials }}
+        <h4>Recognition</h4>
+        <div class="chip-row">
+          {{ range . }}<span class="chip chip--accent">{{ . }}</span>{{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+  </div>
+</section>
+
+{{/* Experience in numbers. No source line: the label carries the whole claim. */}}
+{{ with .Params.stats }}
+<section class="section--sm">
+  <div class="container">
+    {{ partial "stat-band.html" (dict "items" . "show_source" false) }}
+  </div>
+</section>
+{{ end }}
+
+<section class="section">
+  <div class="container container--narrow">
+
+    {{/* Real copy renders in both environments. A page still carrying a brief
+         is suppressed in production, exactly as in the theme archetype. */}}
+    {{ with .Content }}
+      {{ if hugo.IsProduction }}
+        {{ if not (strings.Contains . "<strong>Purpose.</strong>") }}
+        <div class="prose">{{ . }}</div>
+        {{ end }}
+      {{ else }}
+        {{ if strings.Contains . "<strong>Purpose.</strong>" }}
+        <div class="spec">
+          <span class="spec__label">Page brief, not published copy</span>
+          <div class="prose">{{ . }}</div>
+        </div>
+        {{ else }}
+        <div class="prose">{{ . }}</div>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{/* Documentary figure. Contained and captioned, not a scrimmed hero:
+         these photographs put the subject left of frame, which is where the
+         hero gradient is opaque. */}}
+    {{ with .Params.image }}
+    <div style="margin-top:3rem">
+      {{ partial "image-slot.html" (dict
+           "src"   .
+           "ratio" "case"
+           "alt"   ($.Params.image_caption | default $.Title)) }}
+      {{ with $.Params.image_caption }}
+      <p class="caption" style="margin-top:.75rem">{{ . }}</p>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{ with .Params.disciplines }}
+    <div class="chip-row" style="margin-top:2rem">
+      {{ range . }}<span class="chip">{{ . }}</span>{{ end }}
+    </div>
+    {{ end }}
+
+    {{/* Elsewhere. The personal track record is not reproduced on this domain,
+         so the profile links out to it instead. The GitHub handle in
+         hugo.toml is deliberately not surfaced here: it is unverified, and a
+         wrong profile link on a credibility page is worse than none. */}}
+    {{ if .Params.portrait }}
+    <div class="chip-row" style="margin-top:2rem">
+      {{ with .Site.Params.founder }}<a class="chip chip--accent" href="{{ . }}" rel="external">Personal site, speaking and writing</a>{{ end }}
+      {{ with .Site.Params.linkedin }}<a class="chip chip--accent" href="{{ . }}" rel="external">LinkedIn</a>{{ end }}
+    </div>
+    {{ end }}
+
+  </div>
+</section>
+
+{{ $siblings := where .CurrentSection.RegularPages "Permalink" "!=" .Permalink }}
+{{ with $siblings }}
+<section class="section--sm section--ruled">
+  <div class="container">
+    {{ partial "section-header.html" (dict
+         "eyebrow" "Also in this section"
+         "line1"   $.CurrentSection.Title) }}
+    <div class="card-grid">
+      {{ range first 3 . }}
+      <a class="card" href="{{ .RelPermalink }}">
+        <div class="card__body">
+          <span class="card__title">{{ .Title }}</span>
+          <p class="meta">{{ .Description }}</p>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ partial "cta-band.html" (dict
+     "ctx"   .
+     "line1" (or hugo.Data.site.cta_line_1 "The right expertise.")
+     "line2" (or hugo.Data.site.cta_line_2 "Assembled for your challenge.")) }}
+
+{{ end }}

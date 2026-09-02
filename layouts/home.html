@@ -53,7 +53,38 @@
   </div>
 </section>
 
-{{/* 7. Testimonial. Renders only when a real, attributable quote exists in
+{{/* 7. The founder band. A named face before the closing ask, because the
+      whole promise of this site is that one identified person runs the work.
+      Renders only while `founder` exists in content/_index.md. */}}
+{{ with .Params.founder }}
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <div>
+        {{ partial "image-slot.html" (dict
+             "src"   .image
+             "ratio" "hero"
+             "alt"   .image_alt
+             "note"  "Documentary photograph of the named lead") }}
+      </div>
+      <div>
+        {{ with .eyebrow }}<span class="eyebrow">{{ . }}</span>{{ end }}
+        <h2>{{ .line_1 }}
+          <span class="display__line-2 display__line-2--italic">{{ .line_2 }}</span>
+        </h2>
+        <p class="lede" style="margin-top:1.5rem">{{ .text }}</p>
+        <p class="meta">{{ .name }} &middot; {{ .role }}</p>
+        {{ with .link_url }}
+        <a class="btn btn--text" href="{{ . }}">{{ $.Params.founder.link_text }}
+          {{ partial "icon.html" (dict "name" "arrow-right" "class" "btn__arrow") }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* 8. Testimonial. Renders only when a real, attributable quote exists in
       data/testimonials.yaml. Never hardcode one here. */}}
 {{ with hugo.Data.testimonials }}
 {{ $t := index . 0 }}
@@ -64,7 +95,7 @@
 </section>
 {{ end }}
 
-{{/* 8. Logo wall. Renders only when client marks have written permission and
+{{/* 9. Logo wall. Renders only when client marks have written permission and
       have been added to `logos` in content/_index.md. */}}
 {{ with .Params.logos }}
 <section class="section--sm">
@@ -75,7 +106,7 @@
 </section>
 {{ end }}
 
-{{/* 9. Closing invitation. */}}
+{{/* 10. Closing invitation. */}}
 {{ partial "cta-band.html" (dict "ctx" .
      "line1" "The right expertise."
      "line2" "Assembled for your challenge."

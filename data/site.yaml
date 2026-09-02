@@ -8,6 +8,12 @@ cta_line_1: "The right expertise."
 cta_line_2: "Assembled for your challenge."
 primary_cta: "Request an Introduction"
 
+# Secondary hero control. Points at the page that explains how the work runs.
+# Read by themes/incredible/layouts/partials/hero.html; omit it and the hero
+# renders the primary button alone.
+secondary_cta: "How we deliver"
+secondary_cta_url: "/method/"
+
 family:
   - { name: "Company",    url: "https://incredible-company.com" }
   - { name: "Consulting", url: "https://incredible-consulting.com" }

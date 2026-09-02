@@ -14,6 +14,27 @@ hero:
     teams to solve the problems your organisation cannot solve alone.
   # image unset. The CSS atmosphere in .hero--atmos renders instead.
 
+# The founder band on the homepage. The photograph is a real picture of the
+# named lead, colour graded to sit on the dark canvas and not otherwise altered.
+# Do not swap it for a generated portrait: this section exists to show that a
+# real, named person does the work.
+founder:
+  eyebrow: "The person who runs your project"
+  line_1: "One named lead."
+  line_2: "From the first call to handover."
+  image: "images/linda-mohamed-vienna.jpg"
+  image_alt: "Linda Mohamed juggling three balls in an empty conference hall"
+  name: "Linda Mohamed"
+  role: "Founder and Principal Consultant · AWS Community Hero"
+  text: >
+    More than twelve years in software and IT, six of them building on cloud and
+    AI, and six inside enterprise consulting before going independent. She runs
+    the scoping call, writes the proposal, and does or directs the work. The
+    roster is small on purpose, and it is growing by introduction rather than by
+    recruitment.
+  link_url: "/team/linda-mohamed/"
+  link_text: "Read the profile"
+
 philosophy:
   line_1: "Most consulting firms sell capacity."
   line_2: "We sell mastery."

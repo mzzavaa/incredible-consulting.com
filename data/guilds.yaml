@@ -1,32 +1,38 @@
 # Display vocabulary for consulting.com and company.com only.
-# Content directories and URL paths are unchanged: these map onto /services/.
-# Icon key resolves to layouts/partials/icons/<key>.svg.
+# Content directories and URL paths are unchanged: a guild is a label over a
+# page that already exists, never a page of its own.
+#
+# RULE. `url` must resolve. A guild with no page behind it does not belong in
+# this file, because the row renders on the homepage and a dead guild link is
+# the first thing a sceptical buyer clicks. Two guilds from the original brand
+# vocabulary, Security and Transformation, are deliberately absent for that
+# reason: security is delivered through named specialist partners and is
+# described on /team/network/, and there is no transformation practice page to
+# point at yet. Add them back the same day their pages land.
+#
+# Icon key resolves to layouts/partials/icons/<key>.svg in the theme.
 
 - key: ai
   label: "AI Guild"
-  desc: "Intelligent systems that create real value"
-  url: "/services/ai/"
+  desc: "Agent systems and LLM applications that survive production"
+  url: "/services/ai-and-agents/"
 - key: cloud
   label: "Cloud Guild"
-  desc: "Architectures that scale, securely"
-  url: "/services/cloud/"
-- key: security
-  label: "Security Guild"
-  desc: "Trust built into every layer"
-  url: "/services/security/"
+  desc: "Architecture, migration and cost control on AWS and hybrid"
+  url: "/services/cloud-architecture/"
+- key: automation
+  label: "Automation Guild"
+  desc: "The manual work between your systems, removed"
+  url: "/services/automation/"
 - key: data
   label: "Data Guild"
-  desc: "Data turned into clarity and advantage"
-  url: "/services/data/"
+  desc: "Pipelines and platforms that AI can actually use"
+  url: "/services/data-platforms/"
 - key: platform
   label: "Platform Guild"
-  desc: "The platforms that power teams"
-  url: "/services/platform/"
+  desc: "Developer portals, OpenShift and configuration automation"
+  url: "/platforms/developer-platforms/"
 - key: opensource
   label: "Open Source Guild"
-  desc: "The foundations we all build on"
-  url: "/services/open-source/"
-- key: transformation
-  label: "Transformation Guild"
-  desc: "Organisations that become engineering driven"
-  url: "/services/transformation/"
+  desc: "Open weight models and self-hosted, where that is the right answer"
+  url: "/platforms/hybrid-and-open-source/"
