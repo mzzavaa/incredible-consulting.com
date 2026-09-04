@@ -3,6 +3,8 @@ title: "How We Deliver"
 description: "From an idea to a decision-ready prototype in three workshops, then four phases to production and handover, with a written trail behind every decision."
 weight: 50
 draft: false
+image: "img/mood/arc.webp"
+social_image: "images/statements/type-challenge-to-impact.webp"
 eyebrow: "Philosophy and method"
 headline_2: "From idea to evidence."
 ---
@@ -10,6 +12,8 @@ headline_2: "From idea to evidence."
 There is no discovery phase that quietly consumes six weeks, and there is no
 deck at the end of it. The method has one shape: get to something people can look
 at as early as possible, then decide with evidence instead of opinion.
+
+{{< poster src="images/statements/type-challenge-to-impact.webp" alt="From challenge to impact. One, share: tell us what you are trying to achieve, and what has been tried. Two, find: we identify the specialists best suited, not the ones on the bench. Three, meet: align on scope before anything is signed. Four, build: delivering within days, not after a discovery phase." >}}
 
 ## The three workshops
 

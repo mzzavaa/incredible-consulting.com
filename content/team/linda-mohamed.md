@@ -3,7 +3,8 @@ title: "Linda Mohamed"
 description: "Founder and principal consultant. Independent AI and cloud consultant, AWS Community Hero, based in Austria and working across the DACH region."
 weight: 71
 draft: false
-eyebrow: "Master profile"
+social_image: "images/linda-mohamed-vienna.jpg"
+eyebrow: "Who does the work"
 headline_2: "The person who runs your project."
 role: "Founder and Principal Consultant"
 location: "Austria, working across DACH and the EU"

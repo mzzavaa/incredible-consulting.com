@@ -3,6 +3,8 @@ title: "Pricing"
 description: "Published prices: workshop sessions, result documents, an hourly rate, and four pre-scoped packages. All figures in EUR, net, valid for 2026."
 weight: 80
 draft: false
+image: "img/mood/calipers.webp"
+social_image: "images/statements/photo-capacity-vs-mastery.webp"
 eyebrow: "Commercials"
 headline_2: "Published, not negotiated in the dark."
 currency: "EUR"

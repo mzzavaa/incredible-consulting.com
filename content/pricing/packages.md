@@ -3,6 +3,7 @@ title: "Packages"
 description: "Four pre-scoped bundles of workshop sessions and result documents, from about EUR 4,000 to about EUR 16,000, each with a fixed scope and a defined output."
 weight: 81
 draft: false
+image: "img/mood/instrument-case.webp"
 eyebrow: "Pricing"
 headline_2: "A fixed thing you can put on a purchase order."
 commercial_model: "Fixed scope, fixed fee"

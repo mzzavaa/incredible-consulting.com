@@ -3,6 +3,7 @@ title: "Book a Call"
 description: "A free 30 minute idea call with the person who would do the work. No sales team, no qualification round, no obligation."
 weight: 101
 draft: false
+image: "img/mood/gyroscope-small.webp"
 eyebrow: "Contact"
 headline_2: "Thirty minutes, free, about your problem."
 call_length: "30 minutes"

@@ -25,9 +25,18 @@ The practice sells three things, in this order of frequency:
 It does not sell staff augmentation, unmanaged offshore delivery, or decks.
 
 The positioning line the group uses is "most consulting firms sell capacity, we
-sell mastery". The vocabulary that follows from it, Guilds for disciplines and
-Masters for the people, is display language over content directories that keep
-their plain names. See `data/guilds.yaml` and `data/masters.yaml`.
+sell mastery". Guilds is display vocabulary for the disciplines, over content
+directories that keep their plain names: see `data/guilds.yaml`.
+
+**There is deliberately no title for the people.** An earlier version of this
+site called them Masters. That was dropped: a rank is self-awarded and the work
+is not, and the word read as grandiose in English while the rest of the site is
+scrupulously plain. The roster admits a person on a system they shipped rather
+than on a title, which is what `/team/` and `data/roster.yaml` say. The absence
+of logos, testimonials and certifications follows the same rule and is a
+consequence of it, not a slogan: an intermediate version of the homepage led with
+that absence, and it read as defensive rather than confident. The homepage sells
+the offer; the roster page carries the standard.
 
 ## Who delivers
 
@@ -39,9 +48,9 @@ comfortable on hybrid and self-hosted, honest about where Azure and Google Cloud
 depth comes from the network rather than from her.
 
 The full profile is `content/team/linda-mohamed.md`, rendered by
-`layouts/team/page.html`. The roster is `data/masters.yaml`, and it holds exactly
+`layouts/team/page.html`. The roster is `data/roster.yaml`, and it holds exactly
 one entry on purpose: an invented second name would defeat the point of the
-model. The admission standard for new Masters, and how associates are contracted,
+model. The standard for joining the roster, and how associates are contracted,
 is `content/team/network.md`.
 
 The personal CV, speaking record and writing are **not** reproduced here. They
@@ -116,75 +125,80 @@ qualified consulting demand here.
 
 ## Content map
 
+Every page below carries finished, visitor-facing copy. Pages marked CONFIRM
+carry a `CONFIRM BEFORE PUBLISHING` block in their front matter listing the
+specific claims that are drafted from normal practice rather than from a stated
+policy. Read those blocks before the site goes live, then delete them.
+
 ```
 content/
-  _index.md                        Homepage. Carries the hero and founder band params
+  _index.md                        Homepage. Composed in layouts/home.html, no body copy
   services/
-    _index.md                      Service catalogue
+    _index.md                      Catalogue, and the four recurring problem shapes
     ai-and-agents.md
     cloud-architecture.md
     automation.md
     data-platforms.md
     ai-governance.md
   engagements/
-    _index.md                      Model comparison
-    workshop-series.md             COPY. Modules and first-workshop agenda
+    _index.md                      Which model fits, and the price basis for each
+    workshop-series.md             Modules and the first-workshop agenda
     proof-of-concept.md
-    fractional-leadership.md
     architecture-audit.md
+    fractional-leadership.md
     retainer.md
   industries/
-    _index.md
-    energy-and-utilities.md
-    financial-services.md
-    manufacturing-and-logistics.md
-    public-sector.md
+    _index.md                      Delivered vs transferred, stated per sector
+    energy-and-utilities.md        Delivered
+    manufacturing-and-logistics.md Transferred
+    financial-services.md          Transferred
+    public-sector.md               Adjacent
   case-studies/
-    _index.md
+    _index.md                      Includes why no client is named
     geo-ai-platform.md
     automation-hub.md
     video-intelligence-pipeline.md
   method/
-    _index.md                      COPY. Three workshops, results ladder, four phases
+    _index.md                      Three workshops, results ladder, four phases
     discovery.md
     prototype.md
     production.md
     handover.md
   platforms/
-    _index.md                      Stack and vendor position
+    _index.md                      Where the depth is, and the neutrality position
     aws-and-bedrock.md
     hybrid-and-open-source.md
     developer-platforms.md
   team/
-    _index.md                      COPY. How an engagement is staffed
-    linda-mohamed.md               COPY. The Master profile
-    network.md                     COPY. Associates, and joining the roster
+    _index.md                      How an engagement is staffed, and the roster standard
+    linda-mohamed.md               The founder profile
+    network.md                     CONFIRM. Associates, and joining the roster
   pricing/
-    _index.md                      COPY. Sessions, results, hours
-    packages.md                    COPY. The four packages
-    rate-card.md                   COPY. Rates, terms, cancellation
-    funding.md                     COPY. Cloud funding and credits
-    procurement.md
+    _index.md                      Sessions, results, hours
+    packages.md                    CONFIRM. The four packages
+    rate-card.md                   CONFIRM. Rates, terms, cancellation
+    funding.md                     Cloud funding and credits
+    procurement.md                 CONFIRM. Entity, contracts, insurance, VAT
   faq/
     _index.md
     delivery-and-scope.md
-    pricing-and-contracts.md
-    security-and-compliance.md
+    pricing-and-contracts.md       CONFIRM
+    security-and-compliance.md     CONFIRM. States practice, claims no certification
   contact/
-    _index.md
-    book-a-call.md                 COPY. The free 30 minute idea call
-    request-a-proposal.md
+    _index.md                      CONFIRM. Two working day reply commitment
+    book-a-call.md                 CONFIRM. The free 30 minute idea call
+    request-a-proposal.md          CONFIRM. Five working day proposal turnaround
   legal/
     _index.md
-    imprint.md
-    privacy.md
+    imprint.md                     Shortcode, German, discharges the ECG obligation
+    privacy.md                     Shortcode. Describes a site with no cookies or forms
 
 data/
   site.yaml                        Per-site identity read by the theme
   guilds.yaml                      Display vocabulary. Every url must resolve
-  masters.yaml                     The roster. Real, named, consenting people only
+  roster.yaml                      The roster. Real, named, consenting people only
   engagements.yaml                 Engagement model schema
-  case-studies.yaml                Delivered work schema
+  case-studies.yaml                Delivered work schema. Keep in sync with the pages
   results.yaml                     Headline metrics, each traceable to an engagement
   comparison.yaml                  Traditional consulting versus this
   process.yaml                     The four homepage steps
@@ -192,48 +206,121 @@ data/
 
 layouts/
   home.html                        Homepage composition, including the founder band
-  team/page.html                   Master profile: portrait, facts, stat band, prose
+  team/page.html                   Person profile: portrait, facts, stat band, prose
 
 assets/
   images/                          Photographs, processed by Hugo. See below
 ```
 
-## Copy status
+## Copy status and the honesty rules
 
-Pages marked COPY in the map above carry finished, visitor-facing copy. The rest
-are still briefs: a spec of what the page must contain, in the four-part format
-described in the portfolio `CLAUDE.md`. Briefs render in development inside a
-marked `.spec` block and are suppressed in production builds, so an unfinished
-page shows its hero and its metadata and nothing pretending to be copy.
+Three rules govern what may be written on these pages, and they are why several
+of them read less confidently than a normal consulting site:
 
-To finish a page, replace the brief body with real prose. Nothing else changes:
-the same template renders both.
+1. **No client is named, anywhere.** Permission has not been sought. Sector and
+   workload shape are described instead, and `data/testimonials.yaml` and the
+   homepage `logos` list stay empty until written approval exists.
+2. **Delivered work and transferred capability are labelled differently.** The
+   industry pages say which is which, out loud, in the first paragraph. Energy is
+   delivered, manufacturing and financial services are transferred, public sector
+   is adjacent.
+3. **A number that cannot be traced to a named engagement does not ship.** This is
+   why two of the three headline metrics in `data/results.yaml` are phrases rather
+   than figures.
+
+The `CONFIRM BEFORE PUBLISHING` blocks are the fourth rule in practice: where a
+page needed a commercial or security answer that no source material supplied, the
+answer was drafted from normal practice and flagged in place rather than quietly
+invented. Grep for them before launch:
+
+```
+grep -rn "CONFIRM BEFORE PUBLISHING" content/
+```
 
 ## Images
 
-`assets/images/` holds real photographs of a real person. They are processed by
-Hugo into WebP at several widths, so nothing above about 2600px on the long edge
-belongs here.
+Three libraries, in two places, for three different jobs.
+
+### 1. The mood library, shared
+
+`themes/incredible/assets/img/mood/` holds 26 text-free brand images, near-black
+with one brass light source. They live in the theme so every site in the family
+draws on the same set, and they are documented image by image, with the subject
+position of each, in
+[the library README](themes/incredible/assets/img/mood/README.md).
+
+Every page on this site sets one as its hero:
+
+```
+image: "img/mood/prism.webp"
+```
+
+**The composition rule that governs the choice:** the hero scrim is opaque on the
+left, because the headline sits there. A hero image must put its subject on the
+right or in the centre. `tools.jpg` is the one image in the set with a left-hand
+subject; it is for figures, never for a hero.
+
+### 2. The statement library, this site only
+
+`assets/images/statements/` holds 34 images with wording baked into the pixels,
+in three visual treatments: `line-` (gold line art), `photo-` (brass still life),
+`type-` (typographic). Their words are specific to this domain, which is why they
+are not in the shared theme.
+
+Baked-in text is an accessibility cost, so it is spent deliberately in exactly
+two places:
+
+- **Social cards.** `social_image` in front matter, resolved by the theme's
+  `head.html` into `og:image`. A share preview is an image, so an image that
+  carries the message is the right tool. Pages without one fall back to their
+  hero, and the site default is in `data/site.yaml`.
+- **Seven on-page posters,** through `layouts/shortcodes/poster.html`. The
+  shortcode refuses to build without `alt`, and the alt must transcribe the
+  wording in full. A poster may only be used where the page does not print the
+  same words beside it: it makes a claim the page then explains.
+
+Posters are on `/services/`, `/method/`, and each of the three case studies.
+Unused statement images stay in the library on purpose. Eight are deliberately
+not used, and the reason matters more than the list:
+
+- `line-independent-masters.jpg`, `photo-independent-masters.jpg`,
+  `type-independent-masters.jpg` and `photo-the-assembly.jpg` print
+  "Independent Masters" or "Independent masters" in the artwork. That vocabulary
+  was retired: see the first section of this README.
+- `line-challenge-to-impact.jpg` and `photo-challenge-to-impact.jpg` print "We
+  find the right Masters" in the process step. `type-challenge-to-impact.jpg`
+  prints "specialists" in the same slot and is used instead, on `/method/`.
+- `type-seven-guilds.jpg` shows Security and Transformation guilds, which have no
+  pages, see `data/guilds.yaml`.
+- The `days-to-minutes` variants that print "Spatial analytics platform"
+  contradict the client descriptor now used on the case study.
+- `photo-right-expertise.webp` and `type-uncover-the-impossible.webp` print
+  "Request an introduction", which was the booking button's label until it became
+  "Book an idea call". `photo-right-expertise.webp` was also the same photograph
+  as the `/contact/` hero, so that page was showing one picture twice.
+
+This is the standing cost of baked-in text: a wording decision orphans artwork.
+Weigh that before adding a statement image to a new page.
+
+### 3. The founder photographs
+
+`assets/images/` holds three real photographs of a real person.
 
 | File | Ratio | Used by |
 |---|---|---|
 | `linda-mohamed-portrait.jpg` | 4:5 | `/team/linda-mohamed/` portrait slot |
-| `linda-mohamed-vienna.jpg` | 16:9 | Homepage founder band |
+| `linda-mohamed-vienna.jpg` | 16:9 | Homepage founder band, and her social card |
 | `linda-mohamed-community-day.jpg` | 3:2 | `/team/linda-mohamed/` documentary figure |
 
-Provenance: all three are frames from the founder's own 2026 intro deck,
-colour graded to sit on the near-black canvas and not otherwise altered. They are
-her own photographs, published with her knowledge, which is the standard the
-group `IMAGE-BRIEF.md` sets: generated portraits are acceptable as a design
-placeholder and misleading as published content. Do not replace these with
-generated faces.
+Provenance: frames from the founder's own 2026 intro deck, colour graded to sit
+on the near-black canvas and not otherwise altered. Do not replace these with
+generated faces. The mood and statement libraries are rendered brand imagery, not
+photographs of real places or people; their source is the Engineering Mastery
+deck series of September 2026.
 
-Composition constraint: the hero scrim is opaque on the left, so a photograph
-used as a hero background must put its subject on the right. All three of these
-put the subject left of frame, which is why two of them render as contained,
-captioned figures and none of them is a page hero. The remaining image slots on
-the site render their written specification instead of a grey box, so a missing
-photograph stays visible and gets commissioned deliberately.
+All three libraries are processed by Hugo into WebP at several widths, so nothing
+above about 2600px on the long edge belongs in any of them. Masters are 1376 by
+768 and are stored as JPEG because they are photographic.
 
 ## Relationship to other Incredible domains
 

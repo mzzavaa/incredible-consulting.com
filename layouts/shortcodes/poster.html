@@ -1,0 +1,41 @@
+{{- /*
+  poster.html  ·  a statement image from assets/images/statements/.
+
+  Those files carry their wording baked into the pixels, which is a real
+  accessibility cost, so two rules apply and the shortcode enforces the second.
+
+  1. A poster may only be used where the page does not already print the same
+     words next to it. It is a claim the page then explains, never a decorative
+     repeat of the heading directly above it.
+  2. `alt` must transcribe the words in the image, in full. Not "poster image",
+     not a description of the artwork. If the alt text is missing the shortcode
+     fails the build rather than shipping an unreadable image.
+
+  DELIVERED UNRESIZED, ON PURPOSE. Every other image on the site goes through
+  image-slot.html and is re-encoded on the way. Lossy compression is hardest on
+  fine light type over a near-black ground, and a second encode is exactly where
+  serif letterforms go soft. The masters are already WebP at quality 95, which
+  measures 47.8 dB against the source PNG, so the right move is to publish the
+  file as it is: one encode, none of it ours. At 1376px and roughly 100KB it is
+  a sane payload for a figure that renders at most 700 CSS pixels wide, and it
+  still has the pixels for a 2x display.
+
+    {{< poster src="images/statements/photo-the-assembly.webp"
+               alt="The Assembly. Bespoke unification. We identify the precise
+                    specialists best suited to your unique problem." >}}
+*/ -}}
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" -}}
+{{- if not $alt -}}
+  {{- errorf "poster shortcode in %s has no alt text. The wording is inside the image, so alt must transcribe it." .Page.File.Path -}}
+{{- end -}}
+{{- $img := resources.Get $src -}}
+{{- if not $img -}}
+  {{- errorf "poster shortcode in %s points at %q, which does not exist in assets." .Page.File.Path $src -}}
+{{- end -}}
+<div class="poster">
+  <figure class="img-slot img-slot--hero">
+    <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}"
+         alt="{{ $alt }}" loading="lazy" decoding="async">
+  </figure>
+</div>

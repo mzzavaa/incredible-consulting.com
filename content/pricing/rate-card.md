@@ -3,6 +3,7 @@ title: "Rates and Terms"
 description: "The hourly rate, the session and result rates, and the commercial terms behind them, published rather than negotiated in the dark."
 weight: 82
 draft: false
+image: "img/mood/plumb-line.webp"
 eyebrow: "Pricing"
 headline_2: "Numbers you can take into a meeting."
 commercial_model: "Sessions, results, and an hourly rate"

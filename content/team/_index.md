@@ -1,10 +1,11 @@
 ---
-title: "Masters"
+title: "Who Does the Work"
 description: "Who does the work: one named senior lead on every engagement, and a vetted network of independent specialists brought in by name when a project needs more depth."
 weight: 70
 draft: false
+image: "img/mood/instrument-case.webp"
 eyebrow: "The people"
-headline_2: "Not a bench. A roster."
+headline_2: "Admitted on what they shipped."
 ---
 
 Buyers of small consultancies are afraid of two things: that the person in the
@@ -32,17 +33,20 @@ When there is no capacity and no suitable associate, we say so and decline. That
 is uncomfortable and it is still cheaper for everyone than padding an engagement
 to fill a gap.
 
-## Masters, and what the word means here
+## Admitted on the work
 
-The group uses the word Master rather than consultant on purpose. A Master is a
-practitioner admitted to the roster on the strength of what they have shipped in
-production, not on a certification count or a sales target. Membership is by
+There is no title on this site for the people who do the work, and that is
+deliberate. A rank is something you award yourself; the work is not.
+
+The one thing that gets someone onto the roster is a system they have shipped,
+in production, with users, that they can describe honestly including the part
+that went wrong. Not a certification count, not a sales target, and not a
+conference talk about a thing that was never operated. Admission is by
 introduction, and it is reviewed rather than permanent.
 
 The roster is small today and is intended to grow. Independent specialists who
-want to be considered will find the admission standard, the disciplines currently
-open, and how contracting works on the
-[associate network](/team/network/) page.
+want to be considered will find the standard, the disciplines currently open, and
+how contracting works on the [associate network](/team/network/) page.
 
 ## Languages, location and reach
 

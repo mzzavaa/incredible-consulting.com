@@ -1,4 +1,4 @@
-# The Masters roster: the named people who lead engagements.
+# The roster: the named people who lead engagements.
 #
 # One entry per person who can be the named lead in a proposal. This is not a
 # capacity list and not a list of everyone who has ever contributed. A person
@@ -11,6 +11,10 @@
 # They are described on /team/network/ and named in the proposal instead. The
 # distinction is deliberate: a roster that quietly includes everyone available
 # is the bench model this site exists to argue against.
+#
+# There is no rank field, and there should not be one. The site's position is
+# that a title is self-awarded and the work is not, so a person is described by
+# what they lead and what they have shipped. See /team/ for the standard.
 #
 # `portrait` is a path inside assets/, processed by Hugo. Real photographs only.
 # See IMAGE-BRIEF in the portfolio root: generated faces are a design
@@ -28,6 +32,6 @@
   status: active
 
 # Open. The roster is intended to grow, by introduction rather than by
-# recruitment. Admission standard, open disciplines and contracting are on
+# recruitment. The standard, open disciplines and contracting are on
 # /team/network/. Do not add a speculative or placeholder entry here: an empty
 # roster of one is honest, and an invented second name is not.

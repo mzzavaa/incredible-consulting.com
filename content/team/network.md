@@ -3,7 +3,8 @@ title: "Associate Network"
 description: "Vetted independent specialists brought in by name when an engagement needs depth we do not carry in house, and how practitioners join the roster."
 weight: 72
 draft: false
-eyebrow: "Masters"
+image: "img/mood/dividers.webp"
+eyebrow: "Who does the work"
 headline_2: "Independent, always."
 role: "Extended delivery capacity"
 disciplines: ["AWS", "Azure", "Google Cloud", "Local and self-hosted AI", "Platform engineering", "Backstage and Red Hat Developer Hub", "Ansible and AAP", "OpenShift", "Data engineering", "Security"]

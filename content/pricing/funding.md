@@ -3,6 +3,7 @@ title: "Cloud Funding and Credits"
 description: "Public cloud providers fund proofs of concept and migrations with cash contributions and credits. Applying for it is part of the engagement, not an extra."
 weight: 84
 draft: false
+image: "img/mood/pour.webp"
 eyebrow: "Pricing"
 headline_2: "Someone else may pay for the first step."
 funding_small: "Up to EUR 10,000 per proof of concept"

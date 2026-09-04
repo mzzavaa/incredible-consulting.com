@@ -4,12 +4,12 @@
 - slug: geo-ai-platform
   title: "Conversational GIS for Grid Analysis"
   subtitle: "Multi-agent spatial analysis in natural German"
-  client: "Spatial analytics platform, energy and infrastructure"
+  client: "Geospatial software platform, energy and infrastructure"
   industry: energy-and-utilities
   engagement_type: "Workshop series and PoC development"
   status: active
   description: "Spatial analysis bottlenecked on a handful of GIS specialists, opened up to domain experts through a natural language interface over PostGIS."
-  technologies: [AWS Bedrock, CrewAI, PostGIS, MCP, Lambda, Python]
+  technologies: [AWS Bedrock, AgentCore, CrewAI, LangGraph, PostGIS, MCP, Lambda, Python]
   outcomes:
     - Domain experts run spatial queries without SQL or a GIS client
     - Custom MCP server exposes PostGIS operations safely to agents
@@ -20,7 +20,7 @@
   title: "Multi-Agent Automation Hub"
   subtitle: "One conversational entry point over five agent crews"
   client: "Internal product, offered as a reference build"
-  industry: manufacturing-and-logistics
+  industry: professional-services
   engagement_type: "Proof of concept into production"
   status: active
   description: "Five half-automated back-office workflows consolidated into one agent runtime with infrastructure as code and a deployment pipeline."
@@ -38,8 +38,8 @@
   industry: media
   engagement_type: "Fixed-scope build"
   status: completed
-  description: "Raw footage turned into publishable cuts by a serverless pipeline, with frame level validation to stop the agents inventing content."
-  technologies: [Lambda, Step Functions, MediaConvert, FFmpeg, AWS Bedrock, Rekognition]
+  description: "Hours of raw footage turned into publishable cuts by a serverless pipeline, with layered validation to stop the agents selecting scenes that were never in the video."
+  technologies: [Lambda, Step Functions, Amazon Transcribe, Amazon Rekognition, AWS Bedrock, FFmpeg, Remotion, S3]
   outcomes:
     - Publishable cuts produced without a manual editing pass
     - Six layer validation system caught hallucinated scene selections

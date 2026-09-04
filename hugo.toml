@@ -11,13 +11,21 @@ disableKinds = ['taxonomy', 'term']
 #   green #3D8F37 · dark #0a1a08 · white #fff · background #f8f9f6
 #   Font: Inter
 
+# Hugo's default resampleFilter is Box, which is fast and soft. Every image on
+# this site is a downscale from a 1376px master, and Box visibly blurs serif
+# type at that ratio. Lanczos costs build time and nothing else.
+[imaging]
+  resampleFilter = "Lanczos"
+  quality = 88
+
 [params]
   description  = "AI, cloud, automation, and data consulting for teams that need working systems, not decks."
   tagline      = "Consulting · Vienna · AI and Cloud"
   email        = "hello@incredible-consulting.com"
   linkedin     = "https://www.linkedin.com/in/linda-mohamed"
   github       = "https://github.com/linda-mhmd"
-  booking      = "https://outlook.office.com/book/hello@lindamohamed.com/?ismsaljsauthenabled"
+  # Booking URL deliberately not duplicated here. It lives once, in
+  # data/site.yaml, which is what the theme actually reads.
   parent       = "https://incredible-company.com/"
 
   # Sibling domains in the Incredible portfolio
@@ -36,12 +44,12 @@ disableKinds = ['taxonomy', 'term']
   url = "/services/"
   weight = 20
 [[menus.main]]
-  name = "Masters"
-  url = "/team/"
+  name = "Work"
+  url = "/case-studies/"
   weight = 30
 [[menus.main]]
-  name = "Case Studies"
-  url = "/case-studies/"
+  name = "Who does it"
+  url = "/team/"
   weight = 40
 [[menus.main]]
   name = "Engagements"

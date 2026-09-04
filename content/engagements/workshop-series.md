@@ -3,6 +3,7 @@ title: "Workshop Series"
 description: "Facilitated sessions that turn a vague ambition into a goal, a ranked set of use cases, a technical concept, and a costed roadmap."
 weight: 21
 draft: false
+image: "img/mood/calipers.webp"
 eyebrow: "Engagement model"
 headline_2: "Alignment, then a decision."
 model: "workshop-series"

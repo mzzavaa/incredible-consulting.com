@@ -1,18 +1,23 @@
 ---
 title: "Incredible Consulting"
-description: "AI, cloud, automation, and data consulting for teams that need working systems, not decks."
+description: "We find the use cases worth building, tested from the user, business and technology sides, then build them: demo, proof of concept, MVP, and a system running in your value chain."
 weight: 0
 draft: false
+social_image: "images/statements/line-we-sell-mastery.webp"
 
 hero:
-  eyebrow: "Independent Masters"
-  line_1: "Independent Masters."
+  eyebrow: "AI, cloud and automation consulting"
+  line_1: "From idea to working system."
   line_2: "Engineering the impossible."
   line_2_italic: false
   lede: >
-    A cooperative of independent technology experts. We assemble small, senior
-    teams to solve the problems your organisation cannot solve alone.
-  # image unset. The CSS atmosphere in .hero--atmos renders instead.
+    We find the use cases worth building and test each one from three sides:
+    users, business, technology. Then we build, small first. A demo, a proof of
+    concept, an MVP, and finally a system running in your value chain,
+    automating internal work or improving what your customers buy.
+  # Subject sits on the right, which is where the hero scrim is clear. See
+  # themes/incredible/assets/img/mood/README.md before swapping this.
+  image: "img/mood/mechanism.webp"
 
 # The founder band on the homepage. The photograph is a real picture of the
 # named lead, colour graded to sit on the dark canvas and not otherwise altered.
@@ -51,17 +56,7 @@ case_studies:
 logos: []
 ---
 
-**Purpose.** The commercial front door of the Incredible group. It has one job: convince a CTO, head of data, or platform lead that this team can ship, then get a call in the calendar.
-
-**Contains.**
-- Hero: what we do, who we do it for, and the booking button
-- Four service pillars (AI, cloud, automation, data) as cards linking into /services/
-- Engagement models strip: workshop series, PoC, fractional, audit, retainer
-- Proof band: three result metrics pulled from `data/results.yaml`
-- Two featured case studies with the outcome stated before the technology
-- The delivery method in four steps, linking to /method/
-- Industries served, logos or named sectors
-- FAQ teaser (three questions) and a closing booking block
-
-**Primary CTA.** Book a 30 minute scoping call.
-**Links to.** /services/, /engagements/, /case-studies/, /method/, /pricing/, /contact/, and https://incredible-company.com/ as the group parent.
+The homepage has no body copy by design. It is composed in `layouts/home.html`
+from the front matter above and from `data/guilds.yaml`, `data/comparison.yaml`,
+`data/results.yaml`, `data/process.yaml` and the case study pages. Edit those
+rather than writing prose here: anything typed below this line is not rendered.
