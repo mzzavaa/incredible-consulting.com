@@ -54,8 +54,8 @@ of the conversation.
 
 ## Practical
 
-German or English. Vienna time. Based in Austria, working across the DACH region
-and the EU, on site where it helps and remote where it does not.
+German or English. Vienna time, Central European. Based in Austria, working with
+clients globally and mostly remote, on site where it genuinely helps.
 
 ## Who you will be speaking to
 

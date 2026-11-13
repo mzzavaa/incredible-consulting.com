@@ -49,10 +49,10 @@ oversight into the workflow rather than adding it after a review. See
 
 ## Open by default
 
-Methodology, playbooks and checklists are published openly and free, on
-incredible-consulting.org, rather than sold as proprietary IP. For publicly funded
-work that is the appropriate default, and it also means a public body can run the
-method without buying anything.
+The talks, the slides and the workshop method are published openly and free, on
+[incredible-consulting.org](https://incredible-consulting.org/), rather than sold
+as proprietary IP. For publicly funded work that is the appropriate default, and
+it also means a public body can run the method without buying anything.
 
 ## Where to start
 

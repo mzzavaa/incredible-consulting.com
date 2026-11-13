@@ -50,8 +50,12 @@ how contracting works on the [associate network](/team/network/) page.
 
 ## Languages, location and reach
 
-German and English. Based in Austria, delivering across the DACH region and the
-EU, on site where it helps and remote where it does not. Workshops in Vienna and
-the surrounding region are usually on site because a room full of the right
-people is worth the travel. Build phases are usually remote because they do not
-benefit from it.
+German and English. Based in Austria, working with clients globally and mostly
+remote. Workshops within reach of Vienna are often on site, because a room full
+of the right people is worth the travel; everywhere else they run remote, and
+they run well remote. Build phases are remote by default because they are not
+improved by anyone being in the same building.
+
+The time zone is Central European. That is a real constraint for a team in
+California and a non-issue for one in Singapore or Sao Paulo, and it is worth
+raising on the first call rather than discovering in week three.

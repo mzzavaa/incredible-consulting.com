@@ -1,22 +1,23 @@
 ---
 title: "Linda Mohamed"
-description: "Founder and principal consultant. Independent AI and cloud consultant, AWS Community Hero, based in Austria and working across the DACH region."
+description: "Founder and principal consultant. Independent AI and cloud consultant, AWS Community Hero, based in Austria and working globally, mostly remote."
 weight: 71
 draft: false
 social_image: "images/linda-mohamed-vienna.jpg"
 eyebrow: "Who does the work"
 headline_2: "The person who runs your project."
 role: "Founder and Principal Consultant"
-location: "Austria, working across DACH and the EU"
+location: "Austria. Clients worldwide, mostly remote"
 languages: ["German", "English"]
 portrait: "images/linda-mohamed-portrait.jpg"
 portrait_alt: "Linda Mohamed at an AWS user group meetup in Vienna"
 guilds: ["AI", "Cloud", "Data", "Platform"]
 credentials:
   - "AWS Community Hero"
+  - "Founding member, Förderverein AWS Community DACH"
+  - "Vice chair, netidee funding advisory board"
   - "AWS User Group Vienna organiser"
-  - "Förderverein AWS Community DACH"
-  - "Conference speaker and workshop facilitator"
+  - "International conference speaker"
 focus:
   - "AI and agent systems"
   - "Cloud architecture on AWS"
@@ -43,8 +44,15 @@ workshops where a company decides what is worth building at all.
 She is an AWS Community Hero, a recognition AWS gives to a small number of
 practitioners worldwide for sustained technical contribution to the community
 rather than for sales or certification volume. She organises the AWS User Group
-in Vienna, supports the Förderverein AWS Community DACH, and speaks and runs
-workshops at community and industry events.
+in Vienna and is a founding member of the Förderverein AWS Community DACH, the
+association behind the AWS community events across Austria, Germany and
+Switzerland.
+
+She is also vice chair of the funding advisory board of netidee, Austria's
+largest open source funding initiative, which decides which open source and open
+knowledge projects the programme backs each year. It is unpaid, it is a
+considerable amount of reading, and it is the clearest signal on this page of
+where the open-by-default position on these sites comes from.
 
 ## What she actually does on an engagement
 
@@ -89,9 +97,15 @@ Different domains, one recurring pattern: the interesting problem was rarely the
 technology. The full record, with dates and roles, is on the personal site rather
 than here.
 
-Two working languages, German and English. Workshops are usually run in German
-for teams in Austria and Germany, and documentation is delivered in whichever
-language the receiving team reads.
+Two working languages, German and English. Workshops run in German for
+German-speaking teams and in English everywhere else, and documentation is
+delivered in whichever language the receiving team reads.
+
+Work is global and mostly remote. Being based in Austria decides the time zone
+and the invoice, not the client list. Travel is frequent but it is for
+international conferences rather than for status meetings: a build phase is not
+improved by anyone getting on a plane, and a room full of the right people
+occasionally is.
 
 ## Three things worth knowing
 

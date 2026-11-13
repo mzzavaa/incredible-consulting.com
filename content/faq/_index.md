@@ -34,7 +34,7 @@ you meet them before they start.
 
 ## Do you work in German and English?
 
-Yes. Workshops for teams in Austria and Germany usually run in German, and
+Yes. Workshops run in German for German-speaking teams and in English elsewhere, and
 documentation is delivered in whichever language the receiving team reads.
 
 ## What does it cost?

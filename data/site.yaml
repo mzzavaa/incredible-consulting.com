@@ -26,10 +26,10 @@ secondary_cta_url: "/method/"
 # for a share preview and wrong for page content: see layouts/shortcodes/poster.html.
 social_image: "img/mood/mechanism.webp"
 
+# Only domains that are live. Company, Builders and Community come back when
+# their sites are published.
 family:
-  - { name: "Company",    url: "https://incredible-company.com" }
   - { name: "Consulting", url: "https://incredible-consulting.com" }
-  - { name: "Method",     url: "https://incredible-consulting.org" }
-  - { name: "Builders",   url: "https://incredible.builders" }
-  - { name: "Community",  url: "https://incredible.community" }
+  - { name: "Open: talks and slides", url: "https://incredible-consulting.org" }
   - { name: "Training",   url: "https://incredible.training" }
+  - { name: "Linda Mohamed", url: "https://lindamohamed.com" }

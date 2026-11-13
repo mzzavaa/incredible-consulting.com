@@ -70,6 +70,7 @@ rather than to us.
 
 [Security and compliance FAQ](/faq/security-and-compliance/),
 [Public sector](/industries/public-sector/), and
-[Financial services](/industries/financial-services/). The frameworks and
-checklists behind this are published openly on incredible-consulting.org rather
-than kept proprietary.
+[Financial services](/industries/financial-services/). The talks and the
+method behind this are published openly on
+[incredible-consulting.org](https://incredible-consulting.org/) rather than kept
+proprietary.

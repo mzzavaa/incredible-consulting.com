@@ -36,4 +36,4 @@ and live on [Procurement and contracting](/pricing/procurement/).
 ## The rest of the group
 
 Each Incredible domain keeps its own imprint and privacy notice where the law
-requires one, and the group index sits on incredible-company.com.
+requires one.

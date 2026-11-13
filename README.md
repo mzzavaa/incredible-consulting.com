@@ -7,8 +7,9 @@
 
 ## What Incredible Consulting is
 
-An independent AI and cloud consulting practice, based in Austria, working across
-the DACH region and the EU. It is founder-led: Linda Mohamed is the founder and
+An independent AI and cloud consulting practice, based in Austria and working
+with clients globally, mostly remote. It is founder-led: Linda Mohamed is the
+founder and
 the named lead on every engagement, with an associate network of independent
 specialists brought in by name when a project needs depth she does not carry
 herself.
@@ -46,6 +47,13 @@ going independent. AWS Community Hero, AWS User Group Vienna organiser, active i
 the Förderverein AWS Community DACH. German and English. Deepest on AWS,
 comfortable on hybrid and self-hosted, honest about where Azure and Google Cloud
 depth comes from the network rather than from her.
+
+**Reach is global, not regional.** Clients are worldwide and the work is mostly
+remote; the Austrian base decides the time zone and the invoice, not the client
+list. The community and event work is the part that is concentrated in Austria
+and the DACH network, and the conference travel is international. Do not
+reintroduce "across the DACH region" as a description of who the clients are: it
+was on this site once and it undersold the practice by a continent.
 
 The full profile is `content/team/linda-mohamed.md`, rendered by
 `layouts/team/page.html`. The roster is `data/roster.yaml`, and it holds exactly
@@ -330,7 +338,7 @@ above about 2600px on the long edge belongs in any of them. Masters are 1376 by
 - **incredible.builders** is the practitioner and open source community. Open source projects, community contributions, and hands-on builder content belong there; this site links to it from /platforms/ and /team/network/.
 - **incredible.community** owns people, events, and membership. Meetups, user groups, and community programmes are linked, never duplicated here.
 - **incredible.training** owns commercial learning and enablement. When the need is skills rather than delivery, /engagements/workshop-series/ and /method/handover/ hand the visitor over there.
-- **lindamohamed.work** remains the personal portfolio: speaking, writing, and the individual track record. /team/linda-mohamed/ links to it rather than reproducing it.
+- **lindamohamed.com** remains the personal portfolio: speaking, writing, and the individual track record. /team/linda-mohamed/ links to it rather than reproducing it.
 
 ## Conventions
 

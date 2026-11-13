@@ -33,7 +33,7 @@ disableKinds = ['taxonomy', 'term']
   builders       = "https://incredible.builders/"
   community      = "https://incredible.community/"
   training       = "https://incredible.training/"
-  founder        = "https://lindamohamed.work/"
+  founder        = "https://lindamohamed.com/"
 
 [[menus.main]]
   name = "Philosophy"

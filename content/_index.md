@@ -24,19 +24,21 @@ hero:
 # Do not swap it for a generated portrait: this section exists to show that a
 # real, named person does the work.
 founder:
-  eyebrow: "The person who runs your project"
-  line_1: "One named lead."
-  line_2: "From the first call to handover."
+  eyebrow: "The founder"
+  line_1: "I find you the right people."
+  line_2: "And I build it with you."
   image: "images/linda-mohamed-vienna.jpg"
   image_alt: "Linda Mohamed juggling three balls in an empty conference hall"
   name: "Linda Mohamed"
-  role: "Founder and Principal Consultant · AWS Community Hero"
+  role: "Founder · AWS Community Hero"
+  # First person, deliberately. It is the only band on the site written this way,
+  # which is what makes it read as a signed note rather than more brochure copy.
   text: >
-    More than twelve years in software and IT, six of them building on cloud and
-    AI, and six inside enterprise consulting before going independent. She runs
-    the scoping call, writes the proposal, and does or directs the work. The
-    roster is small on purpose, and it is growing by introduction rather than by
-    recruitment.
+    Workshops and hands-on support across everything it takes to get a cloud or
+    AI solution running: the automation, the workflows, and the platforms around
+    it. Where a project needs depth I do not carry myself, I introduce you to the
+    partner, freelancer or consultant who does. My own focus is hybrid
+    architecture, for the systems that cannot all live in one place.
   link_url: "/team/linda-mohamed/"
   link_text: "Read the profile"
 
