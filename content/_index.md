@@ -27,8 +27,8 @@ founder:
   eyebrow: "The founder"
   line_1: "I find you the right people."
   line_2: "And I build it with you."
-  image: "images/linda-mohamed-vienna.jpg"
-  image_alt: "Linda Mohamed juggling three balls in an empty conference hall"
+  image: "images/linda-mohamed-stage-cnda-2026.jpg"
+  image_alt: "Linda Mohamed on stage in a green blazer at Cloud Native Days Austria 2026, smiling at the audience. Photo: Gisiphotography"
   name: "Linda Mohamed"
   role: "Founder · AWS Community Hero"
   # First person, deliberately. It is the only band on the site written this way,
