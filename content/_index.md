@@ -28,8 +28,8 @@ founder:
   line_1: "I find you the right people."
   line_2: "And I build it with you."
   image: "images/linda-mohamed-stage-cnda-2026.jpg"
-  # 3:2, the shape of the photograph itself, so nothing is cut off.
-  image_ratio: "case"
+  # 4:5 portrait, so the picture is about as tall as the text beside it.
+  image_ratio: "portrait"
   image_alt: "Linda Mohamed on stage in a green blazer at Cloud Native Days Austria 2026, smiling at the audience. Photo: Gisiphotography"
   name: "Linda Mohamed"
   role: "Founder · AWS Community Hero"

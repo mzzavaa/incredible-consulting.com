@@ -317,7 +317,7 @@ Weigh that before adding a statement image to a new page.
 | File | Ratio | Used by |
 |---|---|---|
 | `linda-mohamed-portrait.jpg` | 4:5 | `/team/linda-mohamed/` portrait slot |
-| `linda-mohamed-stage-cnda-2026.jpg` | 3:2, shown 16:9 | Homepage founder band. Cloud Native Days Austria 2026, photo by Gisiphotography (Gisi Taschner, Carl Hohenbalken) |
+| `linda-mohamed-stage-cnda-2026.jpg` | 4:5 portrait | Homepage founder band. Cloud Native Days Austria 2026, photo by Gisiphotography (Gisi Taschner, Carl Hohenbalken) |
 | `linda-mohamed-vienna.jpg` | 16:9 | Her social card on the profile page. Was the homepage founder band until 14 November 2026 |
 | `linda-mohamed-community-day.jpg` | 3:2 | `/team/linda-mohamed/` documentary figure |
 
