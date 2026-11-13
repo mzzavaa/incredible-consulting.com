@@ -26,10 +26,10 @@ secondary_cta_url: "/method/"
 # for a share preview and wrong for page content: see layouts/shortcodes/poster.html.
 social_image: "img/mood/mechanism.webp"
 
-# Only domains that are live. Company, Builders and Community come back when
-# their sites are published.
+# Only domains that are live. Company, Builders, Community and Training come
+# back when their sites are published. incredible.training still serves an old
+# Netlify demo template, so it is not linked.
 family:
   - { name: "Consulting", url: "https://incredible-consulting.com" }
   - { name: "Open: talks and slides", url: "https://incredible-consulting.org" }
-  - { name: "Training",   url: "https://incredible.training" }
   - { name: "Linda Mohamed", url: "https://lindamohamed.com" }

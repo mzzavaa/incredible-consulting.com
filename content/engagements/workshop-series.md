@@ -87,7 +87,7 @@ recommendation to stop. Ideas that are out of scope are parked in writing and
 kept in the discussion rather than dropped.
 
 If what the team actually needs is skills rather than a decision, that is
-training, and it is sold on [incredible.training](https://incredible.training/)
+training, and it is sold on incredible.training
 rather than here.
 
 ## Funding

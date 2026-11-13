@@ -71,6 +71,6 @@ validation. Vendor-locked implementations. Long-term operations of a system your
 team should own.
 
 Training, as opposed to delivery, is a different thing entirely and is sold on
-[incredible.training](https://incredible.training/) rather than here. The
+incredible.training rather than here. The
 difference: training sells capability, so your people can build it; consulting
 sells delivery, so you get a working system.

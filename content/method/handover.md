@@ -55,7 +55,7 @@ rather than discovered later.
 Handover transfers a system. It does not transfer a capability the team never had.
 When the receiving team needs to learn the discipline rather than the codebase,
 that is training, and it is run on
-[incredible.training](https://incredible.training/) rather than stretched out of a
+incredible.training rather than stretched out of a
 handover session.
 
 ## If you want a senior voice afterwards
