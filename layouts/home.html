@@ -63,7 +63,7 @@
       <div>
         {{ partial "image-slot.html" (dict
              "src"   .image
-             "ratio" "hero"
+             "ratio" (.image_ratio | default "hero")
              "alt"   .image_alt
              "note"  "Documentary photograph of the named lead") }}
       </div>
